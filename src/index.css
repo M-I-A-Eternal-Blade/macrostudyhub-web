@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --canvas-bg: #ffffff;
+  --oxford-blue: #0f172a;
+  --oxford-midnight: #112959;
+  --royal-sapphire: #1d4ed8;
+  --cyan-ocean: #06b6d4;
+  --emerald-growth: #10b981;
+  --gold-excellence: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.font-mono {
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Light Mode Glassmorphism & Diffuse Shadows */
+.light-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+}
+
+.light-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light-card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(203, 213, 225, 0.95);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
+.light-frosted {
+  background-color: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.75);
+}
+
+.radial-glow-light {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 9999px;
+  filter: blur(100px);
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
